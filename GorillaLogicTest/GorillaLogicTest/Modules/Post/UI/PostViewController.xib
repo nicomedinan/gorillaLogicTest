@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostViewController" customModule="GorillaLogicTest" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="SHx-xW-IzY" id="uqq-wk-tLq"/>
+                <outlet property="imageView" destination="5gw-n2-60T" id="6yL-jt-y2Y"/>
+                <outlet property="titleLabel" destination="c5g-zw-sYS" id="Ejs-sD-xna"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="starImageViews" destination="JsA-gJ-J59" collectionClass="NSMutableArray" id="LGQ-zP-XHJ"/>
+                <outletCollection property="starImageViews" destination="bJB-2g-SV6" collectionClass="NSMutableArray" id="ssZ-ru-jWC"/>
+                <outletCollection property="starImageViews" destination="DKw-fq-Wjh" collectionClass="NSMutableArray" id="Sf8-Ku-zjR"/>
+                <outletCollection property="starImageViews" destination="pUu-R5-n9c" collectionClass="NSMutableArray" id="LKo-pT-Sgk"/>
+                <outletCollection property="starImageViews" destination="4SX-JG-Bpu" collectionClass="NSMutableArray" id="H0c-WL-PXN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rC1-9z-up5">
+                    <rect key="frame" x="20.5" y="88" width="373" height="523"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5g-zw-sYS">
+                            <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="dkN-ae-z9m"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2ho-WJ-ZFo">
+                            <rect key="frame" x="0.0" y="50" width="373" height="80"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="JsA-gJ-J59">
+                                    <rect key="frame" x="0.0" y="0.0" width="74.5" height="80"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-2g-SV6">
+                                    <rect key="frame" x="74.5" y="0.0" width="74.5" height="80"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="DKw-fq-Wjh">
+                                    <rect key="frame" x="149" y="0.0" width="75" height="80"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-R5-n9c">
+                                    <rect key="frame" x="224" y="0.0" width="74.5" height="80"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="4SX-JG-Bpu">
+                                    <rect key="frame" x="298.5" y="0.0" width="74.5" height="80"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="Qf4-qv-S96"/>
+                            </constraints>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5gw-n2-60T">
+                            <rect key="frame" x="0.0" y="130" width="373" height="372.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="5gw-n2-60T" secondAttribute="height" multiplier="1:1" id="GPh-A7-lJk"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHx-xW-IzY">
+                            <rect key="frame" x="0.0" y="502.5" width="373" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rC1-9z-up5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="23D-sQ-cmu"/>
+                <constraint firstItem="rC1-9z-up5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.9" id="hrc-la-0aX"/>
+                <constraint firstItem="rC1-9z-up5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="kZH-L2-1qm"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="star" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

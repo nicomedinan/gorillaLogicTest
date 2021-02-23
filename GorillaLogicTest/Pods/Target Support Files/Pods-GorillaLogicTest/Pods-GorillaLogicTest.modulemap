@@ -1,0 +1,6 @@
+framework module Pods_GorillaLogicTest {
+  umbrella header "Pods-GorillaLogicTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
